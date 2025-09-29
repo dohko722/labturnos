@@ -1,7 +1,7 @@
 # 🧑‍🔬 LabTurnos - Sistema de Turnos con Prioridad
 
-Este proyecto es una aplicación de escritorio en **Java Swing** para la gestión de turnos en un laboratorio.  
-Permite administrar cabinas de atención, dar turnos con distintas prioridades y llevar un historial de atendidos.
+Este documento es una **plantilla base** del README para el proyecto académico **LabTurnos**.  
+Debe ser completado y ajustado por el grupo con su propio contenido definitivo.  
 
 ---
 
@@ -47,29 +47,19 @@ Se desarrolló **LabTurnos**, una aplicación de escritorio en **Java Swing** qu
 
 2. Clonar el repositorio:  
    ```bash
-   git clone https://github.com/dohko722/labturnos.git
+   git clone https://github.com/tuusuario/labturnos.git
    cd labturnos
+   ```
 
-
-## 🚀 Características
-
-- **Gestión de turnos con prioridad**:
-  - Alta
-  - Media
-  - Baja
-- **Cabinas de atención**:
-  - 4 cabinas simultáneas
-  - Ranking dinámico de cabinas libres (por número de atendidos y último turno finalizado).
-- **Cola de espera** ordenada según prioridad.
-- **Historial de turnos atendidos**.
-- **Interfaz gráfica con Swing**:
-  - Botones de control para generar turnos y avanzar en la cola.
-  - Vista en tiempo real de cabinas ocupadas/libres.
-  - Botón **Siguiente** que se activa solo cuando hay turnos pendientes y cabinas disponibles.
+3. Compilar y ejecutar:  
+   ```bash
+   javac labturnos/*.java
+   java labturnos.MainFrame
+   ```
 
 ---
 
-## 📦 Estructura del proyecto
+## 🏗️ Arquitectura del código
 
 ```
 labturnos/
@@ -77,10 +67,10 @@ labturnos/
 │── Turno.java            # Clase que representa un turno (ID, prioridad, etc.)
 │── Cabina.java           # Clase que representa una cabina de atención
 │── TurnoManager.java     # Lógica de negocio: manejo de la cola, cabinas y atendidos
+│── screenshots/          # Carpeta con capturas de pantalla
 ```
 
 ---
-
 
 ## 🖥️ Capturas de pantalla
 
@@ -93,54 +83,54 @@ labturnos/
 ### 📜 Historial de Atendidos
 ![Historial de Atendidos](screenshots/historial.png)
 
+---
+
+## 🧪 Casos de prueba
+
+1. **Prueba de prioridades**:  
+   Crear turnos de diferentes niveles (Alta, Media, Baja) y verificar que la cola se ordene correctamente.  
+
+2. **Prueba de cabinas**:  
+   Finalizar un turno en una cabina y comprobar que el siguiente con mayor prioridad sea asignado a la cabina libre.  
+
+3. **Prueba de historial**:  
+   Atender más de 10 turnos y revisar que todos pasen al historial con su cabina y hora de atención.  
+
+4. **Prueba de botón "Siguiente"**:  
+   Verificar que solo se active cuando existen turnos pendientes y al menos una cabina disponible.  
 
 ---
 
-## 🔧 Requisitos
+## 📊 Resultados
 
-- **Java JDK 8 o superior**
-- IDE recomendado: **IntelliJ IDEA** (aunque funciona en cualquier IDE que soporte proyectos Java)
-
----
-
-## ▶️ Ejecución
-
-1. Clonar este repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/labturnos.git
-   cd labturnos
-   ```
-2. Compilar y ejecutar desde tu IDE (ejecuta la clase `MainFrame`) o desde terminal:
-   ```bash
-   javac labturnos/*.java
-   java labturnos.MainFrame
-   ```
+- Se logró reducir la desorganización en la asignación de turnos.  
+- Se garantiza la **atención prioritaria** de casos urgentes.  
+- Se cuenta con un historial digital que facilita la **trazabilidad** de la atención.  
+- La interfaz gráfica permite un uso sencillo por parte del personal del laboratorio.  
 
 ---
 
-## 📖 Uso
+## 📚 Lecciones aprendidas
 
-1. Crear un nuevo turno con los botones:
-   - `Nuevo ALTA`
-   - `Nuevo MEDIA`
-   - `Nuevo BAJA`
-2. Presionar **Siguiente** para asignar el siguiente turno a la cabina más adecuada.
-3. Finalizar la atención en una cabina con el botón **Terminar**.
-4. Consultar en todo momento:
-   - La **cola de espera**
-   - El **ranking de cabinas**
-   - El **historial de turnos atendidos**
+- La importancia de manejar estructuras de datos como **colas con prioridad**.  
+- Cómo integrar la lógica de negocio con una **interfaz gráfica en Swing**.  
+- La experiencia de trabajo en equipo y uso de **control de versiones con Git y GitHub**.  
+- Planificación y organización en proyectos de **Estructura de Datos** aplicados a casos reales.  
 
 ---
 
-## 👨‍💻 Autor
+## 🔗 Referencias
 
-- Desarrollado por Grupo2  
-- Proyecto académico de práctica en **Java Swing**
+- [Documentación oficial de Java](https://docs.oracle.com/en/java/)  
+- [Guía de Java Swing](https://docs.oracle.com/javase/tutorial/uiswing/)  
+- Material de clase de la asignatura *Estructura de Datos*  
 
 ---
 
-## 📜 Licencia
+## 📜 Nota
+Este documento es una **plantilla base**. Cada grupo debe **ajustar, personalizar y completar** el contenido con base en su propio proyecto.  
+El archivo debe entregarse con el nombre:  
 
-Este proyecto se distribuye bajo la licencia MIT.  
-Eres libre de usarlo, modificarlo y compartirlo.
+```
+README_G2.md
+```

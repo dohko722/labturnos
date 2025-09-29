@@ -5,6 +5,52 @@ Permite administrar cabinas de atención, dar turnos con distintas prioridades y
 
 ---
 
+![Java](https://img.shields.io/badge/Java-8%2B-orange)
+![Swing](https://img.shields.io/badge/GUI-Swing-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-En%20Desarrollo-yellow)
+
+---
+
+## 👥 Información del equipo
+- **Grupo:** G2  
+- **Integrantes:**  
+  - Kevin Andres Cuzco Ochoa 
+  - Richard Paul Larco Mena
+- **Curso/Asignatura:** Estructura de datos  
+- **Docente:** Ing. Lessette Carolina Zambrano Zurita 
+
+---
+
+## 📝 Descripción del problema
+En el laboratorio clínico de la universidad, la asignación de turnos se realiza manualmente, lo que genera:  
+- Desorganización en la cola de espera.  
+- Falta de priorización de casos urgentes.  
+- Dificultad para llevar un historial de pacientes atendidos.  
+
+---
+
+## 💡 Solución propuesta
+Se desarrolló **LabTurnos**, una aplicación de escritorio en **Java Swing** que:  
+- Administra turnos con **tres niveles de prioridad** (Alta, Media, Baja).  
+- Gestiona **4 cabinas de atención simultáneas**.  
+- Ordena la cola de espera automáticamente según prioridad.  
+- Asigna turnos a cabinas libres siguiendo un **ranking dinámico**.  
+- Mantiene un **historial de turnos atendidos**.  
+
+---
+
+## ▶️ Instrucciones de ejecución
+1. Requisitos previos:  
+   - **Java JDK 8 o superior**  
+   - IDE recomendado: IntelliJ IDEA o NetBeans  
+
+2. Clonar el repositorio:  
+   ```bash
+   git clone https://github.com/dohko722/labturnos.git
+   cd labturnos
+
+
 ## 🚀 Características
 
 - **Gestión de turnos con prioridad**:

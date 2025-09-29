@@ -126,11 +126,3 @@ labturnos/
 - Material de clase de la asignatura *Estructura de Datos*  
 
 ---
-
-## 📜 Nota
-Este documento es una **plantilla base**. Cada grupo debe **ajustar, personalizar y completar** el contenido con base en su propio proyecto.  
-El archivo debe entregarse con el nombre:  
-
-```
-README_G2.md
-```

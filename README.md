@@ -1,7 +1,4 @@
-# 🧑‍🔬 LabTurnos - Sistema de Turnos con Prioridad
-
-Este documento es una **plantilla base** del README para el proyecto académico **LabTurnos**.  
-Debe ser completado y ajustado por el grupo con su propio contenido definitivo.  
+# 🧑‍🔬 LabTurnos - Sistema de Turnos con Prioridad 
 
 ---
 
